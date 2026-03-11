@@ -21,8 +21,12 @@ public class ListProgram7_SecondLargestNumber {
         else if(k!=max1 && k>max2)
            max2=k;
        }
+        if(max2==Integer.MIN_VALUE)
+            System.out.println("Second max element do not exist.");
+        else
        System.out.println("Second Max element: "+max2);
 
        
     }
 }
+
